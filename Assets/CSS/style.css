@@ -75,9 +75,6 @@ ul {
     background-color: rgba(245, 245, 245, 0.7);
     transition: all 0.3s ease-in-out;
 
-    &.active {
-    }
-
     &:hover {
         background-color: rgba(0, 0, 0, 0.7);
         backdrop-filter: blur(10px);
@@ -167,22 +164,22 @@ ul {
 
     &.active {
         .menuClose,
-        .menu-container {
+        .menuContainer {
             animation: fallIn 0.3s ease-in-out forwards;
         }
 
-        .display-container {
+        .displayContainer {
             animation: riseIn 0.3s ease-in-out forwards;
         }
     }
 
     &.inactive {
         .menuClose,
-        .menu-container {
+        .menuContainer {
             animation: riseOut 0.2s ease-in-out forwards;
         }
 
-        .display-container {
+        .displayContainer {
             animation: fallOut 0.2s ease-in-out forwards;
         }
 
@@ -194,26 +191,81 @@ ul {
     .menuClose {
         position: absolute;
         top: 2rem;
-        right: 2rem;
+        right: 2.5rem;
         font-size: 1.5rem;
         cursor: pointer;
         z-index: 200;
         color: white;
     }
 
-    .display-container {
+    .displayContainer {
         display: flex;
         flex-direction: column;
         gap: 1rem;
         height: 100vh;
         width: 70%;
-        background-color: rgba(86, 86, 86);
+        background: #565656;
+
+        &.ourFleet {
+            background: url("https://wallpaperaccess.com/full/1538167.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        &.gearGuys {
+            background: url("https://wallpapercave.com/wp/wp8664412.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        &.gearShop {
+            background: url("https://www.bhmpics.com/downloads/car-mechanic-wallpaper/2.thumb-1920-1166483.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        &.spaces {
+            background: url("https://cdn.wallpapersafari.com/2/43/w3rBVS.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        &.experience {
+            background: url("https://wallpapercave.com/wp/wp9977855.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        &.stories {
+            background: url("https://plus.unsplash.com/premium_photo-1661284832790-b49f8a251cd7?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZXhwbG9yZXxlbnwwfHwwfHx8MA%3D%3D");
+            background-size: cover;
+            background-position: center;
+        }
+
+        &.supportServices {
+            background: url("https://st3.depositphotos.com/1003697/17346/i/450/depositphotos_173468930-stock-photo-call-center-operators.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        &.ourCompany {
+            background: url("https://wallpaper.dog/large/20536430.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        &.signIn {
+            background: url("https://www.imageshine.in/uploads/gallery/road-between-mountains-wallpaper-4k-for-pc.jpg");
+            background-size: cover;
+            background-position: center;
+            filter: blur(2px), brightness(0.8);
+        }
     }
 
-    .menu-container {
+    .menuContainer {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        /* gap: 2rem; */
         width: 30%;
         height: 100vh;
         background-color: rgb(41, 41, 41);
